@@ -43,6 +43,7 @@ module.exports = function (app, passport) {
 
   // search route
   app.get('/search/results', search.showSearchResults);
+  app.get('/complexsearch/results',search.showComplexSearchResults);
 
   // Literature Route
   app.post('/literatures', literatures.create);
