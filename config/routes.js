@@ -12,7 +12,7 @@ var users = require('../app/controllers/users');
 var search = require('../app/controllers/search');
 var auth = require('./middlewares/authorization');
 var literatures = require('../app/controllers/literatures');
-
+var statistics = require('../app/controllers/statistics');
 
 /**
  * Expose routes
@@ -44,6 +44,9 @@ module.exports = function (app, passport) {
   // search route
   app.get('/search/results', search.showSearchResults);
   app.get('/complexsearch/results',search.showComplexSearchResults);
+
+  //statistics route
+  app.get('/statistics',statistics.globalView);
 
   // Literature Route
   app.post('/literatures', literatures.create);
