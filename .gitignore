@@ -3,4 +3,7 @@ node_modules/
 config/config.js
 Makefile
 uploads/*
+<<<<<<< HEAD
 public/lib/highcharts
+=======
+>>>>>>> master
